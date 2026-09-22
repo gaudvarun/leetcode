@@ -1,13 +1,13 @@
 class Solution {
 public:
     int singleNumber(std::vector<int>& nums) {
-        int result = 0;
+        int a = 0;
         
     //mast xor use krne ka loop laganeka
         for (int num : nums) {
-            result ^= num;
+            a ^= num;
         }
         
-        return result;
+        return a;
     }
 };
